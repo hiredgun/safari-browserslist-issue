@@ -1,4 +1,4 @@
-## Safari or UglifyJS issue
+## Safari issue "Cannot declare a lexical variable twice"
 
 This repository allows to reproduce Safari bug which causes `SyntaxError: Unexpected identifier 'e'. Cannot declare a lexical variable twice: 'e'.` 
 
@@ -19,7 +19,7 @@ After running above command open `http://localhost:5000` in Chrome and Safari. I
 
 ## Possible solutions
 
-At first I thought that this issue is similar to https://github.com/mishoo/UglifyJS2/issues/1753 and setting `safari10: true` will solve the issue but it didn't.
+At first I thought that this issue is similar to https://github.com/mishoo/UglifyJS2/issues/1753 and setting `safari10: true` in uglify options will solve the issue but it didn't.
 
 ### Solution 1
  - remove destructuring from src/index.js:8
